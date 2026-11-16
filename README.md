@@ -1,47 +1,23 @@
-# Component Name
+# Accessibility Manager
 
-Component description.
+Accessibility Manager is a SigmaOS component providing a functional domain model for `accessibility-manager2` with validated state, deterministic storage, and typed errors.
 
-## Overview
+## Description
 
-This component provides $tool_name compatibility for SigmaOS.
+Accessibility Manager accessibility manager compatibility layer for SigmaOS
 
-## Features
+## Domain model
 
-- Feature 1
-- Feature 2
+- `Accessibility` — domain entity
 
-## Usage
+## API
 
-```rust
-use sigmaos_accessibility::Accessibility;
-
-#[tokio::main]
-async fn main() -> anyhow::Result<()> {
-    let mut accessibility = Accessibility::new()?;
-    accessibility.init().await?;
-    Ok(())
-}
-```
-
-## Building
-
-```bash
-cargo build --release
-```
+- `new()`
 
 ## Testing
 
-```bash
+```sh
 cargo test
 ```
 
-## License
-
-MIT License - see LICENSE file for details
-
-## Inspiration
-
-- $tool_name accessibility
-- accessibility features
-- customization
+Tests are deterministic, isolated, and self-validating.
