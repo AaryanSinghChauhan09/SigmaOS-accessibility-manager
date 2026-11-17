@@ -3,7 +3,7 @@ name = "SigmaOS-accessibility-manager2"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "accessibility-manager2 component"
+description = "Accessibility Manager accessibility manager compatibility layer for SigmaOS"
 upstream = []
 
 [contract]
