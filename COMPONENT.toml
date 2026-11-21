@@ -1,16 +1,16 @@
 [component]
-name = "SigmaOS-accessibility-manager2"
+name = "SigmaOS-accessibility-manager"
 tier = 2
-stability = "scaffold"
-language = "rust"
-description = "Accessibility Manager accessibility manager compatibility layer for SigmaOS"
+stability = "beta"
+language = "shell"
+description = "SigmaOS integration for Accessibility settings: package management, config deployment, and CLI helpers."
 upstream = []
 
 [contract]
-provides = ["component"]
+provides = ["app-manager:accessibility-manager"]
 depends_on = []
 
 [maturity]
 status = "Implemented"
-test_evidence = "Compiles and passes AAA unit tests"
-next_milestone = "Hardware and runtime integration"
+test_evidence = "test.sh: syntax + metadata + isolated-HOME lifecycle checks"
+next_mestone = "Per-app config polish"
